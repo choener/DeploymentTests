@@ -71,8 +71,7 @@ script:
 - cabal new-build -w ${HC} ${TEST} ${BENCH} all
 - if [ "x$TEST" = "x--enable-tests" ]; then cabal new-test -w ${HC} ${TEST} all; fi
 # This is all part of the deployment process
-# TODO need a script to generate this stuff
-- tar -czf test.tgz `find dist-newstyle -executable -type f -name DeploymentTests`
+- bash .travis-prepare-release.sh
 deploy:
   provider: releases
   file: test.tgz
