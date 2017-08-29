@@ -1,7 +1,8 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
 # prepare release files
 
+rm -fr release
 mkdir release
 # copy executable(s)
 cp `find dist-newstyle -executable -type f -name DeploymentTests` release
