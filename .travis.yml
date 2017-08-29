@@ -73,12 +73,12 @@ script:
 # This is all part of the deployment process
 # TODO need a script to generate this stuff
 - tar -czf test.tgz `find dist-newstyle -executable -type f -name DeploymentTests`
-  deploy:
-      provider: releases
-      file: test.tgz
-      skip_cleanup: true
-      on:
-          tags
-      api_key:
-        secure: QAWwP0oegib90JSrPK3ovLA3y92AB9bicnWKjQ7MMzSBSaXWnHJriAB9hr+d/MSGs9KmxRR20J6KadOLXXb8kIeFtTAi7IkuKUWaJdQ/G+NhK6iUpZZX96QpSYpnC7Qj1WlX7+3Q42AJVIA3VYJm8S7d4zEV0p4fvssLjTyXuAMju6KJXrSJPrhDDgNR7s37zh1qvvbUDIj11Uo2bH3yaSx0sWm9iYbsWyf406NT11ZT1Ypgs/mSuORL0Yo8dJxfJSaPvSNy6u+LOeJROSx0XJWk9WdwpDdEUSoTo2Lrwk6hpkTuaJThpOjtbLwj/3mKMs/185B/vcSeAdJ1yK6Lo5FunUsSG5fohqIuuP8cP+YdY4Yqvmhamim71UiyfH2Bk2Jk9bj07JYABg6ZF6tr0rrJrQzxWd4yH5GFOFBm0kw7PpNBlegakUmhOBDtlg15nsRjtmiauJG22OCB860LwyHcYgPrwIwzWboswWrOqqs3GxbsuM/zoO5QPApPLN7ooqUc6MNZmFULRlRyprI7rE5YEyN9aRS2iuRrsxuYQrYwdn9PLa6Kh5hdPK/6pjXfQZfr/Y2gpqLAz6QxGGG/RqXOiZileMy/sL+yqbV1VVmd0UWZomGquB3FHdR1pI9sjPfPd57bFExFlc/rmPz5f/0zfSyyTGc0gbCtAX0BAg8=
+deploy:
+    provider: releases
+    file: test.tgz
+    skip_cleanup: true
+    on:
+        tags
+    api_key:
+      secure: QAWwP0oegib90JSrPK3ovLA3y92AB9bicnWKjQ7MMzSBSaXWnHJriAB9hr+d/MSGs9KmxRR20J6KadOLXXb8kIeFtTAi7IkuKUWaJdQ/G+NhK6iUpZZX96QpSYpnC7Qj1WlX7+3Q42AJVIA3VYJm8S7d4zEV0p4fvssLjTyXuAMju6KJXrSJPrhDDgNR7s37zh1qvvbUDIj11Uo2bH3yaSx0sWm9iYbsWyf406NT11ZT1Ypgs/mSuORL0Yo8dJxfJSaPvSNy6u+LOeJROSx0XJWk9WdwpDdEUSoTo2Lrwk6hpkTuaJThpOjtbLwj/3mKMs/185B/vcSeAdJ1yK6Lo5FunUsSG5fohqIuuP8cP+YdY4Yqvmhamim71UiyfH2Bk2Jk9bj07JYABg6ZF6tr0rrJrQzxWd4yH5GFOFBm0kw7PpNBlegakUmhOBDtlg15nsRjtmiauJG22OCB860LwyHcYgPrwIwzWboswWrOqqs3GxbsuM/zoO5QPApPLN7ooqUc6MNZmFULRlRyprI7rE5YEyN9aRS2iuRrsxuYQrYwdn9PLa6Kh5hdPK/6pjXfQZfr/Y2gpqLAz6QxGGG/RqXOiZileMy/sL+yqbV1VVmd0UWZomGquB3FHdR1pI9sjPfPd57bFExFlc/rmPz5f/0zfSyyTGc0gbCtAX0BAg8=
 
