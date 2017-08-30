@@ -18,6 +18,7 @@ description:
 
 extra-source-files:
   data/*.dat
+  build/*
 
 
 
