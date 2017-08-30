@@ -1,13 +1,14 @@
 #!/usr/bin/env bash
 
 # prepare release files
-
-rm -fr release
-mkdir release
+P=`pwd`
+D= basename ${P}
+rm -fr $D
+mkdir $D
 # copy executable(s)
-cp `find dist-newstyle -executable -type f -name DeploymentTests` release
+cp `find dist-newstyle -executable -type f -name DeploymentTests` $D
 # copy data
-cp -r data release
+cp -r data $D
 # prepare tar.gz
-tar czf test.tgz release
+tar czf $D.tgz $D
 

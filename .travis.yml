@@ -75,7 +75,7 @@ script:
 - pwd
 - ls -alh
 - find dist-newstyle -executable -type f
-- ./build/travis-prepare-release.sh
+- $TRAVIS_BUILD_DIR/build/travis-prepare-release.sh
 deploy:
   provider: releases
   file: test.tgz
