@@ -75,7 +75,7 @@ script:
 - pwd
 - ls -alh
 - find dist-newstyle -executable -type f
-- $TRAVIS_BUILD_DIR/build/travis-prepare-release.sh
+- $TRAVIS_BUILD_DIR/.travis/prepare-release.sh
 deploy:
   provider: releases
   file_glob: true

@@ -18,7 +18,6 @@ description:
 
 extra-source-files:
   data/*.dat
-  build/travis-prepare-release.sh
 
 
 
