@@ -78,7 +78,8 @@ script:
 - $TRAVIS_BUILD_DIR/build/travis-prepare-release.sh
 deploy:
   provider: releases
-  file: test.tgz
+  file_glob: true
+  file: "build/*.tgz"
   skip_cleanup: true
   overwrite: true
   #  on:
