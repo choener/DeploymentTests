@@ -2,7 +2,7 @@
 
 # prepare release files
 P=`pwd`
-D= basename ${P}
+D=`basename ${P}`
 rm -fr $D
 mkdir $D
 # copy executable(s)
